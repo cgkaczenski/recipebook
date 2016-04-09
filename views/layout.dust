@@ -8,8 +8,8 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-7">
-			{+body /}
+			<div class="col-md-offset-2 col-md-7">
+				{+body /}
 			</div>
 		</div>
 	</div>
