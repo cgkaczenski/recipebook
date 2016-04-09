@@ -52,6 +52,17 @@ app.post('/add', function(req, res){
 	});
 });
 
+app.delete('/delete/:id', function(req, res){
+	pg.connect(connect, function(err, client, done) {
+		if(err) {
+			return console.error('error fetching client from pool', err);
+		}
+		client.query('DELETE FROM recipes WHERE id = $1', [req.params.id]);
+		done();
+		res.sendStatus(200);
+	});
+});
+
 app.set('port', (process.env.PORT || 3000));
 
 app.listen(app.get('port'), function(){
