@@ -1,0 +1,28 @@
+{
+  "name": "recipebook",
+  "version": "1.0.0",
+  "description": "Nodejs app with PostgreSQL database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgkaczenski/recipebook.git"
+  },
+  "author": "Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgkaczenski/recipebook/issues"
+  },
+  "homepage": "https://github.com/cgkaczenski/recipebook#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "consolidate": "^0.14.0",
+    "dust": "^0.3.0",
+    "dustjs-helpers": "^1.7.3",
+    "dustjs-linkedin": "^2.7.2",
+    "express": "^4.13.4",
+    "pg": "^4.5.3"
+  }
+}
